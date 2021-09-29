@@ -6,7 +6,6 @@
 
 
 const aluno = require("./aluno")
-const estudantes = require("./estudantes")
 const listaDeEstudantes = require("./estudantes")
 
 let curso = {
@@ -14,7 +13,6 @@ let curso = {
     notaDeAprovacao: 7,
     faltasMax: 3,
     estudantes: listaDeEstudantes,
-
     //  Passo 4
 
     // 	Crie o método que permite adicionar alunos à lista do curso, ou seja, quando chamamos nosso método em nosso objeto curso, deverá adicionar um aluno a mais na propriedade lista de estudantes do objeto curso.
@@ -39,7 +37,7 @@ let curso = {
                 faltas = alunoSelecionado.QtdFaltas;
             } 
         }
-        if(media >= this.notaDeAprovacao && faltas < this.faltasMax || media >= (this.notaDeAprovacao*0,10) && faltas == this.faltasMax ){
+        if(media >= this.notaDeAprovacao && faltas < this.faltasMax || media >= (this.notaDeAprovacao*1,10) && faltas == this.faltasMax ){
             return true;
         }
         else{
@@ -62,10 +60,12 @@ let curso = {
 
 curso.addAluno("João", 2, [7,8,8])
 
+console.log(curso.estudantes)
 
-// console.log(curso.alunoAprovado("João"))
+console.log(curso.alunoAprovado("Lucia"))
 
 console.log(curso.listaAlunosAprovados())
+
 
 
 
