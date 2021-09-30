@@ -37,7 +37,7 @@ let curso = {
                 faltas = alunoSelecionado.QtdFaltas;
             } 
         }
-        if(media >= this.notaDeAprovacao && faltas < this.faltasMax || media >= (this.notaDeAprovacao*1,10) && faltas == this.faltasMax ){
+        if(media >= this.notaDeAprovacao && faltas < this.faltasMax || media >= (this.notaDeAprovacao*1.10) && faltas == this.faltasMax ){
             return true;
         }
         else{
